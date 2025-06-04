@@ -1,0 +1,37 @@
+
+.tasks {
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 2em;
+}
+
+.task:nth-child(2n) {
+  background-color: var(--grey-color);
+}
+
+.task__check {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.task__check:focus {
+  outline-color: var(--primary-color-hover);
+}
+
+.task__name {
+  flex: 1 1;
+  margin: 0 1em;
+
+  font-size: 1em;
+  color: var(--text-color);
+
+  cursor: pointer;
+}
+
+.task__name_completed {
+  text-decoration: line-through;
+}

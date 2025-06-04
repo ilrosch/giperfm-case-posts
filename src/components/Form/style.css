@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+
+  margin-bottom: 1em;
+}
+
+.form__field {
+  flex: 1 1;
+}
+
+.form__input {
+  width: 100%;
+  height: 38px;
+  padding: 1em;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-btn);
+  background-color: var(--white-color);
+
+  font-size: 0.8em;
+  color: var(--text-color);
+
+  transition: border-color 0.3s;
+
+  outline: none;
+}
+
+.form__input:focus {
+  border-color: var(--primary-color-hover);
+}
+
+.form__feedback {
+  font-size: 0.8em;
+  color: var(--danger-color);
+  margin-top: 0.6em;
+}

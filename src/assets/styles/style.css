@@ -1,0 +1,142 @@
+:root {
+  --bg-color: #f5f5f5;
+  --white-color: #ffffff;
+  --text-color: #1e1e1e;
+
+  --primary-color: #0d6efd;
+  --primary-color-hover: #3280f7;
+  --primary-color-active: #0c61df;
+
+  --danger-color: #dc3545;
+  --danger-color-hover:#ee3d4f;
+  --danger-color-active: #cc2435;
+
+  --warning-color: #ffc107;
+  --warning-color-hover: #fac21b;
+  --warning-color-active: #e7af05;
+
+  --grey-color: #f3f3f37a;
+
+  --border-color: #dddcdc;
+  --border-card: 3px;
+  --border-btn: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+
+  background-color: var(--bg-color);
+}
+
+.container {
+  position: relative;
+
+  max-width: 808px;
+  width: 100%;
+
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+
+  margin-bottom: 1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+
+  font-size: 1em;
+  color: var(--text-color);
+
+  border: none;
+  border-radius: var(--border-btn);
+
+  outline-width: 0.5px;
+  outline-offset: 5px;
+  outline-style: solid;
+  outline-color: transparent;
+
+  transition: background-color 0.3s, outline-color 0.3s;
+
+  cursor: pointer;
+}
+
+.btn_small {
+  font-size: 0.8em;
+}
+
+.btn_sorted {
+  background-color: var(--bg-color);
+}
+
+.btn_sorted:focus {
+  outline-color: var(--bg-color);
+}
+
+.btn_primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.btn_primary:focus {
+  outline-color: var(--primary-color-hover);
+}
+
+.btn_primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn_primary:active {
+  background-color: var(--primary-color-active);
+}
+
+.btn_danger {
+  color: var(--white-color);
+  background-color: var(--danger-color);
+}
+
+.btn_danger:focus {
+  outline-color: var(--danger-color-hover);
+}
+
+.btn_danger:hover {
+  background-color: var(--danger-color-hover);
+}
+
+.btn_danger:active {
+  background-color: var(--danger-color-active);
+}
+
+.btn_warning {
+  color: var(--white-color);
+  background-color: var(--warning-color);
+}
+
+.btn_warning:focus {
+  outline-color: var(--warning-color-hover);
+}
+
+.btn_warning:hover {
+  background-color: var(--warning-color-hover);
+}
+
+.btn_warning:active {
+  background-color: var(--warning-color-active);
+}
