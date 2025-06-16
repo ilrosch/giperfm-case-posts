@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "../../hooks"
+import { useAppDispatch, useAppSelector, useSyncTasksLocalStore } from "../../hooks"
 import { FilterType, TaskStatus } from "../../types"
 import {
   rmTask,
@@ -28,6 +28,8 @@ const getSelector = (key: FilterType) => {
 const Tasks: React.FC<tasksFilter> = ({ filterType }) => {
   const tasks = useAppSelector(getSelector(filterType))
   const dispatch = useAppDispatch()
+
+  useSyncTasksLocalStore()
 
   const handleChangeStatus = (id: string, curStatus: TaskStatus): void => {
     const status = curStatus === 'active' ? 'completed' : 'active'

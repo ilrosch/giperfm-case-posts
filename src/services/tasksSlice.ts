@@ -8,12 +8,16 @@ const tasksAdapter = createEntityAdapter<Task>()
 
 const taskSlice = createSlice({
   name: 'tasks',
-  initialState: tasksAdapter.getInitialState(),
+  initialState: { status: 'idle', ...tasksAdapter.getInitialState() },
   reducers: {
     addTask: tasksAdapter.addOne,
     rmTask: tasksAdapter.removeOne,
     rmTasks: tasksAdapter.removeAll,
     updateTask: tasksAdapter.updateOne,
+    setAllTasks: (state, { payload }) => {
+      tasksAdapter.setAll(state, payload)
+      state.status = 'success'
+    },
     rmCompletedTasks: (state) => {
       const completedIds = state.ids.filter(
         (id) => state.entities[id]?.status === 'completed'
@@ -37,7 +41,8 @@ export const {
   rmTasks,
   rmCompletedTasks,
   updateTask, 
-  setAllCompletedTasks 
+  setAllCompletedTasks,
+  setAllTasks,
 } = taskSlice.actions
 
 export default taskSlice.reducer

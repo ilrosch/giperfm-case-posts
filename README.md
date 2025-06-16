@@ -1,6 +1,6 @@
 # Todos application
 
-Just an app that allows you to manage your current to-do list. Mindbox internship test assignment 
+Just an app that allows you to manage your current to-do list. Giper.fm internship test assignment 
 
 ![preview](./src/assets/img/PREVIEW.png)
 
@@ -16,10 +16,11 @@ Just an app that allows you to manage your current to-do list. Mindbox internshi
 
 ## Tech Stack
 
-**Language:** Typescript
-**Framework:** React
-**State application:** Redux, Redux Toolkit
-**Testing:** Jest, React Testing Library
+- **Language:** Typescript
+- **Framework:** React
+- **State application:** Redux, Redux Toolkit
+- **Store:** localStorage
+- **Testing:** Jest, React Testing Library
 
 ---
 
@@ -28,9 +29,9 @@ Just an app that allows you to manage your current to-do list. Mindbox internshi
 Clone repository
 
 ```console
-  git clone git@github.com:ilrosch/mindbox-case-todos.git
+  git clone git@github.com:ilrosch/giperfm-case-tasks.git
   # or
-  # git clone https://github.com/ilrosch/mindbox-case-todos.git
+  # git clone https://github.com/ilrosch/giperfm-case-tasks.git
 ```
 
 Install dependencies
