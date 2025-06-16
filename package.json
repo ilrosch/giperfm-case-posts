@@ -1,7 +1,6 @@
 {
   "name": "todo",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@testing-library/dom": "^10.4.0",
