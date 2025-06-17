@@ -9,6 +9,7 @@ Simple app for downloading posts. Giper.fm internship test assignment
 ## Tech Stack
 
 - **Language:** Typescript
+- **Request:** fetch
 
 ---
 
